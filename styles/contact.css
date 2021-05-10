@@ -74,3 +74,84 @@
     font-size: 13px;
     font-weight: 300;
 }
+
+/*FAQ section, where the accordion is kept, including section specific css*/
+#faq{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #faq .add{ /*Add is the name for the plus icon*/
+    display: block;
+  }
+  
+  #faq .remove{ /*Remove is the name for the less icon*/
+    display: none;
+  }
+  
+  #faq i{ 
+    font-size: 20px;
+  }
+  
+  /*Accordion container and each item*/
+  .accordion{
+    max-width: 800px;
+    
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  } 
+  
+  .accordion-item{
+    background-color: transparent;
+    border-bottom: 3px solid #ea5a3e;
+    
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  /*Styles for the question*/
+  
+  .accordion-title{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-around;
+    
+    color: black;
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+  }
+  
+  .accordion-title:hover{
+    color: #ea5a3e;
+  }
+  
+  .accordion-title h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+  }
+  
+  /*Styles for the answer*/
+  
+  .accordion-content{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #ea5a3e;
+    transition: max-height 0.6s;
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  .accordion-content p{
+    padding: 20px;
+    color: white;
+  }
