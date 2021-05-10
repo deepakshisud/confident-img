@@ -16,7 +16,7 @@
 
 .contact .heading p {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.7;
     color: #999999;
     margin: 20px 0 60px;
@@ -41,13 +41,13 @@
 }
 
 .contact .title h3 {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .contact .title p {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
     color: #999;
     line-height: 1.6;
     margin: 0 0 40px;
@@ -66,7 +66,7 @@
     width: 20px;
 }
 .contact .content .info h4 {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.4;
 }
 
