@@ -1,0 +1,18 @@
+body {
+    background-color: #d4d4d4;;
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+}
+.mainnav {
+    height: 500px;
+    background-image: url('cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#mainNavbar .nav-link:hover{
+    color: #ea5a3e;
+}
