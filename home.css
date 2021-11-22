@@ -41,8 +41,16 @@ h1{
   height: 125px;
   width: 150px;
   color: #d4d4d4;
+  border: 10px solid #ea5a3e;
 }
-
+#demo-button1 {
+  height: 150px;
+  width: 190px;
+  color: #d4d4d4;
+  margin-bottom: 10px;
+  border: 7px solid #d4d4d4;
+  
+}
 .course-img {
     height: 300px;
 }
@@ -65,8 +73,126 @@ h1{
     z-index: 1; 
   }
   
-  img {
+  .nac-img {
     width: 600px;
     height: 300px;
     display: block;
   }
+
+  .image-stack__item--bottom1 {
+    grid-column: 8 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .image-stack__item--top1 {
+    grid-row: 1;
+    grid-column: 8 / span 8;
+    padding-top: 30%; 
+    padding-right: 0%;
+    z-index: 1; 
+  }
+
+  .about-img {
+    width: 400px;
+    height: 550px;
+  }
+
+  .hrdivider {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hrdivider span {
+    position: absolute;
+    top: -20px;
+    background: #d4d4d4;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 26px;
+  }
+.content-center {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+ul {
+  display: flex;
+  list-style: none
+}
+
+@media (max-width:700px) {
+  ul {
+      display: block
+  }
+}
+
+ul li {
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative
+}
+
+ul li i {
+  transition: all 0.3s linear
+}
+
+ul li:hover i {
+  color: #fff;
+  font-size: 17px
+}
+
+ul li:hover::after {
+  opacity: 1;
+  transform: scale(0.8)
+}
+
+ul li::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s linear
+}
+
+ul li:nth-child(1) {
+  border: 2px solid white;
+  color: white
+}
+
+ul li:nth-child(1)::after {
+  background-color: white;
+  color: white
+}
+
+ul li:nth-child(2) {
+  border: 2px solid white;
+  color: white
+}
+
+ul li:nth-child(2)::after {
+  background-color: white;
+  color: white
+}
+
+ul li:nth-child(3) {
+  border: 2px solid white;
+  color: white
+}
+
+ul li:nth-child(3)::after {
+  background-color: white;
+  color: white
+}
